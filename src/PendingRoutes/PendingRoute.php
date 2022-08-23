@@ -32,6 +32,7 @@ class PendingRoute
      * @var Collection<PendingRouteAction>
      */
     public Collection $actions;
+
     /**
      * @param SplFileInfo $fileInfo
      * @param ReflectionClass $class
@@ -47,6 +48,7 @@ class PendingRoute
         $this->fullyQualifiedClassName = $fullyQualifiedClassName;
         $this->actions = $actions;
     }
+
     public function namespace(): string
     {
         return Str::beforeLast($this->fullyQualifiedClassName, '\\');

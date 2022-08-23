@@ -12,6 +12,7 @@ class PendingRouteFactory
     public string $basePath;
     protected string $rootNamespace;
     protected string $registeringDirectory;
+
     public function __construct(string $basePath, string $rootNamespace, string $registeringDirectory)
     {
         $this->basePath = $basePath;
