@@ -27,6 +27,7 @@ class Route implements DiscoveryAttribute
      */
     public ?string $name = null;
     public ?string $domain = null;
+
     /**
      * @param array<int, string>|string $method
      * @param string|null $uri

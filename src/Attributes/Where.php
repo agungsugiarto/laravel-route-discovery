@@ -13,6 +13,7 @@ class Where implements DiscoveryAttribute
     public const uuid = '[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}';
     public string $param;
     public string $constraint;
+
     public function __construct(string $param, string $constraint)
     {
         $this->param = $param;
