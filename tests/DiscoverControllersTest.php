@@ -13,12 +13,7 @@ it('can discover controller in a directory', function () {
         ->in(controllersPath('Single'));
 
     $this
-        ->assertRegisteredRoutesCount(1)
-        ->assertRouteRegistered(
-            MyController::class,
-            controllerMethod: 'index',
-            uri: 'my',
-        );
+        ->assertRegisteredRoutesCount(1)->assertRouteRegistered(MyController::class, controllerMethod: 'index', uri: 'my');
 });
 
 it('does not discover routes for default Laravel skeleton controllers that have public methods', function () {
@@ -28,12 +23,7 @@ it('does not discover routes for default Laravel skeleton controllers that have 
         ->in(controllersPath('DefaultController'));
 
     $this
-        ->assertRegisteredRoutesCount(1)
-        ->assertRouteRegistered(
-            ControllerThatExtendsDefaultController::class,
-            controllerMethod: 'index',
-            uri: 'controller-that-extends-default',
-        );
+        ->assertRegisteredRoutesCount(1)->assertRouteRegistered(ControllerThatExtendsDefaultController::class, controllerMethod: 'index', uri: 'controller-that-extends-default');
 });
 
 it('can discover controllers with custom methods', function () {
@@ -60,10 +50,5 @@ it('can use a prefix when discovering routes', function () {
     });
 
     $this
-        ->assertRegisteredRoutesCount(1)
-        ->assertRouteRegistered(
-            MyController::class,
-            controllerMethod: 'index',
-            uri: 'my-prefix/my',
-        );
+        ->assertRegisteredRoutesCount(1)->assertRouteRegistered(MyController::class, controllerMethod: 'index', uri: 'my-prefix/my');
 });

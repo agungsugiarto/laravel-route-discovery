@@ -17,7 +17,7 @@ class MoveRoutesStartingWithParametersLast implements PendingRouteTransformer
     {
         return $pendingRoutes->sortBy(function (PendingRoute $pendingRoute) {
             $containsRouteStartingWithUri = $pendingRoute->actions->contains(function (PendingRouteAction $action) {
-                return str_starts_with($action->uri, '{');
+                return strncmp($action->uri, '{', strlen('{')) === 0;
             });
 
             if (! $containsRouteStartingWithUri) {
@@ -25,7 +25,7 @@ class MoveRoutesStartingWithParametersLast implements PendingRouteTransformer
             }
 
             return $pendingRoute->actions->max(function (PendingRouteAction $action) {
-                if (! str_starts_with($action->uri, '{')) {
+                if (strncmp($action->uri, '{', strlen('{')) !== 0) {
                     return PHP_INT_MAX;
                 }
 

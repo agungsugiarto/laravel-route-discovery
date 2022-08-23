@@ -19,11 +19,7 @@ it('can discover a single directory with a prefix', function () {
 
     $this->registerViewsFromConfigFile();
 
-    $this->assertRouteRegistered(
-        ViewController::class,
-        controllerMethod: '\\' . ViewController::class,
-        uri: 'docs/contact',
-    );
+    $this->assertRouteRegistered(ViewController::class, controllerMethod: '\\' . ViewController::class, uri: 'docs/contact');
 });
 
 it('can discover a single directory without a prefix', function () {
@@ -33,9 +29,5 @@ it('can discover a single directory without a prefix', function () {
 
     $this->registerViewsFromConfigFile();
 
-    $this->assertRouteRegistered(
-        ViewController::class,
-        controllerMethod: '\\' . ViewController::class,
-        uri: 'contact',
-    );
+    $this->assertRouteRegistered(ViewController::class, controllerMethod: '\\' . ViewController::class, uri: 'contact');
 });

@@ -13,21 +13,40 @@ use SplFileInfo;
 class PendingRoute
 {
     /**
+     * @var SplFileInfo
+     */
+    public SplFileInfo $fileInfo;
+    /**
+     * @var ReflectionClass
+     */
+    public ReflectionClass $class;
+    /**
+     * @var string
+     */
+    public string $uri;
+    /**
+     * @var string
+     */
+    public string $fullyQualifiedClassName;
+    /**
+     * @var Collection<PendingRouteAction>
+     */
+    public Collection $actions;
+    /**
      * @param SplFileInfo $fileInfo
      * @param ReflectionClass $class
      * @param string $uri
      * @param string $fullyQualifiedClassName
      * @param Collection<PendingRouteAction> $actions
      */
-    public function __construct(
-        public SplFileInfo $fileInfo,
-        public ReflectionClass $class,
-        public string $uri,
-        public string $fullyQualifiedClassName,
-        public Collection $actions,
-    ) {
+    public function __construct(SplFileInfo $fileInfo, ReflectionClass $class, string $uri, string $fullyQualifiedClassName, Collection $actions)
+    {
+        $this->fileInfo = $fileInfo;
+        $this->class = $class;
+        $this->uri = $uri;
+        $this->fullyQualifiedClassName = $fullyQualifiedClassName;
+        $this->actions = $actions;
     }
-
     public function namespace(): string
     {
         return Str::beforeLast($this->fullyQualifiedClassName, '\\');
@@ -59,7 +78,7 @@ class PendingRoute
      */
     public function getAttribute(string $attributeClass): ?DiscoveryAttribute
     {
-        $attributes = $this->class->getAttributes($attributeClass, ReflectionAttribute::IS_INSTANCEOF);
+        $attributes = method_exists($this->class, 'getAttributes') ? $this->class->getAttributes($attributeClass, ReflectionAttribute::IS_INSTANCEOF) : [];
 
         if (! count($attributes)) {
             return null;

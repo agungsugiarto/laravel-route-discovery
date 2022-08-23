@@ -9,11 +9,14 @@ use SplFileInfo;
 
 class PendingRouteFactory
 {
-    public function __construct(
-        public string $basePath,
-        protected string $rootNamespace,
-        protected string $registeringDirectory
-    ) {
+    public string $basePath;
+    protected string $rootNamespace;
+    protected string $registeringDirectory;
+    public function __construct(string $basePath, string $rootNamespace, string $registeringDirectory)
+    {
+        $this->basePath = $basePath;
+        $this->rootNamespace = $rootNamespace;
+        $this->registeringDirectory = $registeringDirectory;
     }
 
     public function make(SplFileInfo $fileInfo): ?PendingRoute

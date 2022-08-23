@@ -51,7 +51,7 @@ class PendingRouteAction
         /** @var ReflectionParameter $modelParameter */
         $modelParameter = collect($this->method->getParameters())->first(function (ReflectionParameter $parameter) {
             /** @phpstan-ignore-next-line */
-            return is_a($parameter->getType()?->getName(), Model::class, true);
+            return is_a(($getType = $parameter->getType()) ? $getType->getName() : null, Model::class, true);
         });
 
         $uri = '';
@@ -84,7 +84,7 @@ class PendingRouteAction
      *
      * @return self
      */
-    public function addMiddleware(array|string $middleware): self
+    public function addMiddleware($middleware): self
     {
         $middleware = Arr::wrap($middleware);
 
@@ -100,13 +100,22 @@ class PendingRouteAction
      */
     protected function discoverHttpMethods(): array
     {
-        return match ($this->method->name) {
-            'index', 'create', 'show', 'edit' => ['GET'],
-            'store' => ['POST'],
-            'update' => ['PUT', 'PATCH'],
-            'destroy', 'delete' => ['DELETE'],
-            default => ['GET'],
-        };
+        switch ($this->method->name) {
+            case 'index':
+            case 'create':
+            case 'show':
+            case 'edit':
+                return ['GET'];
+            case 'store':
+                return ['POST'];
+            case 'update':
+                return ['PUT', 'PATCH'];
+            case 'destroy':
+            case 'delete':
+                return ['DELETE'];
+            default:
+                return ['GET'];
+        }
     }
 
     /**
@@ -124,7 +133,7 @@ class PendingRouteAction
     /**
      * @return string|array{string, string}
      */
-    public function action(): string|array
+    public function action()
     {
         return $this->action[1] === '__invoke'
             ? $this->action[0]
@@ -145,7 +154,7 @@ class PendingRouteAction
      */
     public function getAttribute(string $attributeClass): ?DiscoveryAttribute
     {
-        $attributes = $this->method->getAttributes($attributeClass, ReflectionAttribute::IS_INSTANCEOF);
+        $attributes = method_exists($this->method, 'getAttributes') ? $this->method->getAttributes($attributeClass, ReflectionAttribute::IS_INSTANCEOF) : [];
 
         if (! count($attributes)) {
             return null;

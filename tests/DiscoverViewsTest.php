@@ -16,11 +16,6 @@ it('can discover views in a directory', function () {
         'nested' => 'nested',
         'nested/another' => 'nested.another',
     ])->each(function (string $name, string $uri) {
-        $this->assertRouteRegistered(
-            ViewController::class,
-            controllerMethod: '\\' . ViewController::class,
-            uri: $uri,
-            name: $name,
-        );
+        $this->assertRouteRegistered(ViewController::class, controllerMethod: '\\' . ViewController::class, uri: $uri, name: $name);
     });
 });

@@ -47,12 +47,16 @@ class TestCase extends Orchestra
         return $this;
     }
 
+    /**
+     * @param string|mixed[] $httpMethods
+     * @param string|mixed[] $middleware
+     */
     public function assertRouteRegistered(
         string $controller,
         string $controllerMethod = 'myMethod',
-        string | array $httpMethods = ['get'],
+        $httpMethods = ['get'],
         string $uri = null,
-        string | array $middleware = [],
+        $middleware = [],
         ?string $name = null,
         ?string $domain = null,
         ?array $wheres = null

@@ -6,6 +6,6 @@ class MyController
 {
     public function index()
     {
-        return $this::class . '@' . __METHOD__;
+        return get_class($this) . '@' . __METHOD__;
     }
 }

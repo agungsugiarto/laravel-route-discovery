@@ -62,11 +62,7 @@ class RouteRegistrar
     {
         $files = (new Finder())->files()->depth(0)->name('*.php')->in($directory);
 
-        $pendingRouteFactory = new PendingRouteFactory(
-            $this->basePath,
-            $this->rootNamespace,
-            $this->registeringDirectory,
-        );
+        $pendingRouteFactory = new PendingRouteFactory($this->basePath, $this->rootNamespace, $this->registeringDirectory);
 
         $pendingRoutes = collect($files)
             ->map(fn (SplFileInfo $file) => $pendingRouteFactory->make($file))
