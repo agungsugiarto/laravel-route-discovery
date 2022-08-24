@@ -2,10 +2,10 @@
 
 namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
-use Illuminate\Support\Collection;
 use Fluent\RouteDiscovery\Attributes\Where;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Illuminate\Support\Collection;
 
 class HandleWheresAttribute implements PendingRouteTransformer
 {

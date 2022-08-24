@@ -2,8 +2,8 @@
 
 namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where;
 
-use Illuminate\Foundation\Auth\User;
 use Fluent\RouteDiscovery\Attributes\Where;
+use Illuminate\Foundation\Auth\User;
 
 class WhereAttributeController
 {

@@ -2,10 +2,10 @@
 
 namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
-use Illuminate\Support\Collection;
 use Fluent\RouteDiscovery\Attributes\DoNotDiscover;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Illuminate\Support\Collection;
 
 class HandleDoNotDiscoverAttribute implements PendingRouteTransformer
 {

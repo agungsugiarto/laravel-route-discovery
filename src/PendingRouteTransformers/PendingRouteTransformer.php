@@ -2,8 +2,8 @@
 
 namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
-use Illuminate\Support\Collection;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
+use Illuminate\Support\Collection;
 
 interface PendingRouteTransformer
 {

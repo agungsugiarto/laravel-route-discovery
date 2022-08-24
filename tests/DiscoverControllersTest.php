@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Fluent\RouteDiscovery\Discovery\Discover;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod\CustomMethodController;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerThatExtendsDefaultController;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
+use Illuminate\Support\Facades\Route;
 
 it('can discover controller in a directory', function () {
     Discover::controllers()

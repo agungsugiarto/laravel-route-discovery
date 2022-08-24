@@ -2,15 +2,15 @@
 
 namespace Fluent\RouteDiscovery\PendingRoutes;
 
+use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Fluent\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Where;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionMethod;
 use ReflectionParameter;
-use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Fluent\RouteDiscovery\Attributes\Route;
-use Fluent\RouteDiscovery\Attributes\Where;
 
 class PendingRouteAction
 {

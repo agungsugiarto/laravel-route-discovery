@@ -2,13 +2,13 @@
 
 namespace Fluent\RouteDiscovery\Tests\Support;
 
+use Fluent\RouteDiscovery\RouteDiscoveryServiceProvider;
+use Fluent\RouteDiscovery\RouteRegistrar;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Support\Arr;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\LaravelRay\RayServiceProvider;
-use Fluent\RouteDiscovery\RouteDiscoveryServiceProvider;
-use Fluent\RouteDiscovery\RouteRegistrar;
 
 class TestCase extends Orchestra
 {

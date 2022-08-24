@@ -2,12 +2,12 @@
 
 namespace Fluent\RouteDiscovery\PendingRoutes;
 
+use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Fluent\RouteDiscovery\Attributes\Route;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionClass;
-use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Fluent\RouteDiscovery\Attributes\Route;
 use SplFileInfo;
 
 class PendingRoute

@@ -2,11 +2,11 @@
 
 namespace Fluent\RouteDiscovery;
 
+use Fluent\RouteDiscovery\Discovery\Discover;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fluent\RouteDiscovery\Discovery\Discover;
 
 class RouteDiscoveryServiceProvider extends PackageServiceProvider
 {

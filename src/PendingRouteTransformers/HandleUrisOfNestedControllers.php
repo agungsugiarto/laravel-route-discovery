@@ -2,10 +2,10 @@
 
 namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
-use Illuminate\Support\Collection;
-use Illuminate\Support\Str;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 
 class HandleUrisOfNestedControllers implements PendingRouteTransformer
 {

@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Routing\Route;
 use Fluent\RouteDiscovery\Attributes\Where;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomRouteName\CustomRouteNameController;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\DefaultRouteNameController;
@@ -27,6 +26,7 @@ use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyControl
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where\WhereAttributeController;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
+use Illuminate\Routing\Route;
 
 it('can automatically discovery a simple route', function () {
     $this

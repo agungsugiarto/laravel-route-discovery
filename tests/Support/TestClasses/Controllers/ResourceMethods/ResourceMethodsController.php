@@ -2,8 +2,8 @@
 
 namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods;
 
-use Illuminate\Http\Request;
 use Fluent\RouteDiscovery\Tests\Support\TestClasses\Models\User;
+use Illuminate\Http\Request;
 
 class ResourceMethodsController
 {

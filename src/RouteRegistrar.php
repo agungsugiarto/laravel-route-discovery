@@ -2,12 +2,12 @@
 
 namespace Fluent\RouteDiscovery;
 
-use Illuminate\Routing\Router;
-use Illuminate\Support\Collection;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
 use Fluent\RouteDiscovery\PendingRoutes\PendingRouteFactory;
 use Fluent\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Collection;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
 

@@ -2,8 +2,8 @@
 
 namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod;
 
-use Illuminate\Foundation\Auth\User;
 use Fluent\RouteDiscovery\Attributes\Route;
+use Illuminate\Foundation\Auth\User;
 
 class OverrideHttpMethodController
 {
