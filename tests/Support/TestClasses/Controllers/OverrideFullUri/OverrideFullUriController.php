@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Route;
 
 class OverrideFullUriController
 {

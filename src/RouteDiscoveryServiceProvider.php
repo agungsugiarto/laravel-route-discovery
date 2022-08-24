@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\RouteDiscovery;
+namespace Fluent\RouteDiscovery;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\RouteDiscovery\Discovery\Discover;
+use Fluent\RouteDiscovery\Discovery\Discover;
 
 class RouteDiscoveryServiceProvider extends PackageServiceProvider
 {

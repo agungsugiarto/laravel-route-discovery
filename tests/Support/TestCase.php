@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support;
+namespace Fluent\RouteDiscovery\Tests\Support;
 
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Support\Arr;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\LaravelRay\RayServiceProvider;
-use Spatie\RouteDiscovery\RouteDiscoveryServiceProvider;
-use Spatie\RouteDiscovery\RouteRegistrar;
+use Fluent\RouteDiscovery\RouteDiscoveryServiceProvider;
+use Fluent\RouteDiscovery\RouteRegistrar;
 
 class TestCase extends Orchestra
 {
@@ -22,7 +22,7 @@ class TestCase extends Orchestra
 
         $this->routeRegistrar = (new RouteRegistrar($router))
             ->useBasePath($this->getTestPath('Support'))
-            ->useRootNamespace('Spatie\RouteDiscovery\Tests\Support\\');
+            ->useRootNamespace('Fluent\RouteDiscovery\Tests\Support\\');
     }
 
     protected function getPackageProviders($app)

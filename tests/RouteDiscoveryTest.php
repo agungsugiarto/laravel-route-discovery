@@ -1,32 +1,32 @@
 <?php
 
 use Illuminate\Routing\Route;
-use Spatie\RouteDiscovery\Attributes\Where;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomRouteName\CustomRouteNameController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\DefaultRouteNameController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested\AnotherDefaultRouteNameController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain\DomainController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController\DoNotDiscoverThisMethodController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverMethod\DoNotDiscoverMethodController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable\InvokableController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware\MiddlewareOnControllerController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware\MiddlewareOnMethodController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Model\ModelController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\Photos\CommentsController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\PhotosController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\ChildController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\Deepest\IndexController as DeepestIndexController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\IndexController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\ParentController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods\NonPublicMethodsController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri\OverrideFullUriController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod\OverrideHttpMethodController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri\OverrideUriController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods\ResourceMethodsController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where\WhereAttributeController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
+use Fluent\RouteDiscovery\Attributes\Where;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomRouteName\CustomRouteNameController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\DefaultRouteNameController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested\AnotherDefaultRouteNameController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain\DomainController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController\DoNotDiscoverThisMethodController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverMethod\DoNotDiscoverMethodController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable\InvokableController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware\MiddlewareOnControllerController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware\MiddlewareOnMethodController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Model\ModelController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\Photos\CommentsController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\PhotosController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\ChildController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\Deepest\IndexController as DeepestIndexController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\IndexController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\ParentController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods\NonPublicMethodsController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri\OverrideFullUriController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod\OverrideHttpMethodController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri\OverrideUriController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods\ResourceMethodsController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where\WhereAttributeController;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
 
 it('can automatically discovery a simple route', function () {
     $this

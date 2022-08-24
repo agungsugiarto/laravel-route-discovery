@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Fluent\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Support\Str;
 use ReflectionClass;

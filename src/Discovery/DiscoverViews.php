@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Discovery;
+namespace Fluent\RouteDiscovery\Discovery;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;

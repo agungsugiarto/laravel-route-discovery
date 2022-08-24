@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRouteTransformers;
+namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Fluent\RouteDiscovery\Attributes\DoNotDiscover;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
 
 class HandleDoNotDiscoverAttribute implements PendingRouteTransformer
 {

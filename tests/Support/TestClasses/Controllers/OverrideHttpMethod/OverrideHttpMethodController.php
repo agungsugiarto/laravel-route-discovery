@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod;
 
 use Illuminate\Foundation\Auth\User;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Route;
 
 class OverrideHttpMethodController
 {

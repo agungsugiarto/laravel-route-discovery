@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Fluent\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionClass;
-use Spatie\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Fluent\RouteDiscovery\Attributes\Route;
 use SplFileInfo;
 
 class PendingRoute

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Discovery;
+namespace Fluent\RouteDiscovery\Discovery;
 
-use Spatie\RouteDiscovery\RouteRegistrar;
+use Fluent\RouteDiscovery\RouteRegistrar;
 
 class DiscoverControllers
 {

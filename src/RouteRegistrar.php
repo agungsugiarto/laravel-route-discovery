@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteDiscovery;
+namespace Fluent\RouteDiscovery;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteFactory;
-use Spatie\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRouteFactory;
+use Fluent\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
 
@@ -56,7 +56,7 @@ class RouteRegistrar
     /**
      * @param string $directory
      *
-     * @return Collection<\Spatie\RouteDiscovery\PendingRoutes\PendingRoute>
+     * @return Collection<\Fluent\RouteDiscovery\PendingRoutes\PendingRoute>
      */
     protected function convertToPendingRoutes(string $directory): Collection
     {

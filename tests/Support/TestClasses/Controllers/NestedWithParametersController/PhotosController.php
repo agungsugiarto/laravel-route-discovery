@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController;
 
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Models\Photo;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Models\Photo;
 
 class PhotosController
 {

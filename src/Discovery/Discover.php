@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Discovery;
+namespace Fluent\RouteDiscovery\Discovery;
 
 class Discover
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRouteTransformers;
+namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
 
 class AddControllerUriToActions implements PendingRouteTransformer
 {

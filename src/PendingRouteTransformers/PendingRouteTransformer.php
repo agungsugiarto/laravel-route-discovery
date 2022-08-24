@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRouteTransformers;
+namespace Fluent\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 
 interface PendingRouteTransformer
 {

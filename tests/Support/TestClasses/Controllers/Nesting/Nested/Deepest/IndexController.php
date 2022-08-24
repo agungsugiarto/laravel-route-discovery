@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\Deepest;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested\Deepest;
 
 class IndexController
 {

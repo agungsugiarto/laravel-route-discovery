@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod;
 
 class CustomMethodController
 {

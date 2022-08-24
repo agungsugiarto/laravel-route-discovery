@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Fluent\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -8,9 +8,9 @@ use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionMethod;
 use ReflectionParameter;
-use Spatie\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Attributes\Where;
+use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Fluent\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Where;
 
 class PendingRouteAction
 {

@@ -3,7 +3,7 @@ title: Using route transformers
 weight: 1
 ---
 
-Under the hood, the package will build up a collection of `Spatie\RouteDiscovery\PendingRoutes\PendingRoute` instances by looking at the controllers and views in your project. This collection of `PendingRoutes` can be modified by a `PendingRouteTransformer`. After that, each `action` inside a `PendingRoute` will be registered as a regular Laravel route.
+Under the hood, the package will build up a collection of `Fluent\RouteDiscovery\PendingRoutes\PendingRoute` instances by looking at the controllers and views in your project. This collection of `PendingRoutes` can be modified by a `PendingRouteTransformer`. After that, each `action` inside a `PendingRoute` will be registered as a regular Laravel route.
 
 In the `route-discovery` config file you'll see the registered route transformers.
 
@@ -17,27 +17,27 @@ In the `route-discovery` config file you'll see the registered route transformer
  * In most cases, you shouldn't change these.
  */
 'pending_route_transformers' => [
-    ...Spatie\RouteDiscovery\Config::defaultRouteTransformers(),
+    ...Fluent\RouteDiscovery\Config::defaultRouteTransformers(),
     //
 ],
 ```
 
-This is the returned value of `Spatie\RouteDiscovery\Config::defaultRouteTransformers()`:
+This is the returned value of `Fluent\RouteDiscovery\Config::defaultRouteTransformers()`:
 
 ```php
 [
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute::class,
-    Spatie\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute::class,
+    Fluent\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast::class,
 ];
 ```
 
@@ -45,11 +45,11 @@ These transformers will handle specific `Route` attributes, make sure the routes
 
 ## Creating your own route transformer
 
-You can create your own route transformer by letting a class implement the `Spatie\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer` interface. Here's how that interface looks like:
+You can create your own route transformer by letting a class implement the `Fluent\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer` interface. Here's how that interface looks like:
 
 ```php
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
+use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
 
 interface PendingRouteTransformer
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\RouteDiscovery;
+namespace Fluent\RouteDiscovery;
 
-use Spatie\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions;
-use Spatie\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast;
-use Spatie\RouteDiscovery\PendingRouteTransformers\RejectDefaultControllerMethodRoutes;
+use Fluent\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions;
+use Fluent\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers;
+use Fluent\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute;
+use Fluent\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast;
+use Fluent\RouteDiscovery\PendingRouteTransformers\RejectDefaultControllerMethodRoutes;
 
 class Config
 {

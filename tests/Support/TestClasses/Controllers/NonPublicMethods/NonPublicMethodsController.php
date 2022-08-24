@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods;
 
 class NonPublicMethodsController
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverMethod;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverMethod;
 
-use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+use Fluent\RouteDiscovery\Attributes\DoNotDiscover;
 
 class DoNotDiscoverMethodController
 {

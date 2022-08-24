@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
 
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
+use Fluent\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
 
 #[Route(middleware: TestMiddleware::class)]
 class MiddlewareOnControllerController

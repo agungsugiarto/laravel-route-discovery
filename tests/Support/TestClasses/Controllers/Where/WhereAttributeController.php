@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where;
 
 use Illuminate\Foundation\Auth\User;
-use Spatie\RouteDiscovery\Attributes\Where;
+use Fluent\RouteDiscovery\Attributes\Where;
 
 class WhereAttributeController
 {

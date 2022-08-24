@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
 
 class ZZZController
 {

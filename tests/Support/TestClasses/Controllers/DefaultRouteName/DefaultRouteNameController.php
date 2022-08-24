@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName;
 
 use Illuminate\Foundation\Auth\User;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Route;
 
 class DefaultRouteNameController
 {

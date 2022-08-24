@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Route;
 
 #[Route(domain: 'first.example.com')]
 class DomainController

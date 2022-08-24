@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Fluent\RouteDiscovery\Attributes\Route;
 
 class OverrideUriController
 {

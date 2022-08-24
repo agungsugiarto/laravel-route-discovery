@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods;
+namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods;
 
 use Illuminate\Http\Request;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Models\User;
+use Fluent\RouteDiscovery\Tests\Support\TestClasses\Models\User;
 
 class ResourceMethodsController
 {

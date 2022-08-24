@@ -1,17 +1,23 @@
 {
-    "name": "spatie/laravel-route-discovery",
+    "name": "agungsugiarto/laravel-route-discovery",
     "description": "Auto register routes using PHP attributes",
     "keywords": [
         "spatie",
         "laravel-route-discovery"
     ],
-    "homepage": "https://github.com/spatie/laravel-route-discovery",
+    "homepage": "https://github.com/agungsugiarto/laravel-route-discovery",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Agung Sugiarto",
+            "email": "me.agungsugiarto@gmail.com",
+            "homepage": "https://agungsugiarto.github.io",
             "role": "Developer"
         }
     ],
@@ -35,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\RouteDiscovery\\": "src",
-            "Spatie\\RouteDiscovery\\Database\\Factories\\": "database/factories"
+            "Fluent\\RouteDiscovery\\": "src",
+            "Fluent\\RouteDiscovery\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\RouteDiscovery\\Tests\\": "tests"
+            "Fluent\\RouteDiscovery\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,20 +65,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\RouteDiscovery\\RouteDiscoveryServiceProvider"
+                "Fluent\\RouteDiscovery\\RouteDiscoveryServiceProvider"
             ]
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/spatie"
-        },
-        {
-            "type": "other",
-            "url": "https://spatie.be/open-source/support-us"
-        }
-    ]
+    "prefer-stable": true
 }
